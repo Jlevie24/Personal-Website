@@ -290,12 +290,17 @@ nav li a:hover {
 
 @media (max-width: 800px) {
 	.home-page-content {
-		margin: 2.5rem auto 2.5rem;
+		margin: 1.5rem auto;
+		align-items: flex-start;
+		min-height: 25rem;
+		height: 40vh;
+		max-height: 100%;
 	}
 
 	.flex-container {
 		flex-direction: column;
 		text-align: center;
+		padding-bottom: 2rem;
 	}
 
 	.profile-pic {
