@@ -423,6 +423,7 @@ nav li a:hover {
 
 .my-work {
 	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
 .my-work h2 {
@@ -437,7 +438,7 @@ nav li a:hover {
 .portfolio {
 	display: grid;
 	margin: 2.25rem auto 0;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr)); 
 	gap: 10px;
 }
 
@@ -453,12 +454,6 @@ nav li a:hover {
 
 .portfolio__img:hover {
 	transform: scale(1.2);
-}
-
-@media (max-width: 400px) {
-	.portfolio {
-		grid-template-columns: 1fr;
-	}
 }
 
 /* Resume */
